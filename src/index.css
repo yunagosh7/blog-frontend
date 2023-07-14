@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+:root {
+  --font: 'Heebo', sans-serif;
+  --primary: #6CE3B8;
+  --secondary: #D962DC;
+  
+
+  font-family: var(--font);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
