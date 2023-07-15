@@ -1,34 +1,64 @@
 .container-btn-menu {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    padding: 8px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 8px;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    align-items: center;
-    background-color: var(--primary);
-    transform: translateY(-200px);
-    transition: transform 0.35s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  background-color: var(--primary);
+  transform: translateY(-200px);
+  transition: transform 0.35s ease-in-out;
 }
 
 .navbar.active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .login-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .login-links .link {
-    text-decoration: none;  
-    color: #FFFFFF;
-    padding: 8px 0;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 0;
+  width: 100%;
+  text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+    .container-btn-menu {
+        display: none;
+    }
+
+    .login-links {
+    flex-direction: row;
+  }
+
+  .login-links .link {
+    color: #000000;
+    padding: 12px;
+    width: fit-content;
+  }
+
+  
+  .login-links .link:hover {
+    background-color: #ddd;
+  }
+
+  .navbar {
+    transform: translateY(0);
+    background-color: transparent;
+    width: auto;
+    position: static;
+  }
+}

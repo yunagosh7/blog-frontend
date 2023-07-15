@@ -5,7 +5,7 @@ export const Login = () => {
   return (
     <div className="login">
       <p className="page-title">Bienvenido de vuelta</p>
-      <form className="form-login" onSubmit={(e)=> e.preventDefault()}>
+      <form className="form" onSubmit={(e)=> e.preventDefault()}>
       <div className="fields-container">
           <label htmlFor="username">Ingrese su nombre de usuario</label>
           <input type="text" id="username" />

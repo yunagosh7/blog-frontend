@@ -11,3 +11,9 @@
     background-color: #000;
     margin: 2px 0;
 }
+
+@media screen and (min-width:600px) {
+    .menu-bar, .menu-line  {
+        display: none;
+    }
+}

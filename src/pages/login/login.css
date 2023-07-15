@@ -4,7 +4,7 @@
     margin: 20px 0;
 }
 
-.form-login {
+.form {
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     border: 1px solid #cfcfcf;
 }
 
-.login {
+.register, .login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
     margin-top: 40px;
 }
 
-.login input {
+.register input,.login input {
     padding: 6px;
     outline: none;
     border: 1px solid #c9c9c9;
@@ -29,11 +29,11 @@
     width: 275px;
 }
 
-.login .page-title {
+.register .page-title, .login .page-title {
     font-size: 1.5rem;
 }
 
-.login .submit-btn {
+.register .submit-btn, .login .submit-btn {
     width: 288px;
     background-color: #1f883d;
     color: white;
